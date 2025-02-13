@@ -1,37 +1,72 @@
-# Security Standards
+---
+description: Security standards and data protection patterns
+globs: ["**/*"]
+---
+
+# Security Guide
 
 ## Secret Management
-- Never commit secrets to repository
-- Use environment variables for secrets
-- Encrypt sensitive data
-- Include .env in .gitignore
-- Implement secrets rotation policy
+- Use .env.local for local secrets
+- Never commit .env in production
+- Periodic secrets rotation
+- Secrets in environment variables
 - Document access control
+- Encrypt sensitive data
+
+## Authentication
+- NextAuth.js as main solution
+- JWT with secure cookies
+- CSRF protection
+- Rate limiting on sensitive routes
+- Implement 2FA when possible
+- Secure session management
+
+## API Security
+- Input validation with Zod
+- Data sanitization
+- Security Headers
+  - CORS configured
+  - CSP implemented
+  - X-Frame-Options
+  - X-Content-Type-Options
+- Rate limiting
+- Request size limiting
 
 ## Dependency Management
-- Regular security audits
-- Automated vulnerability scanning
-- License compliance checks
-
-### Tools
-- npm audit
-- snyk
-- dependabot
+- Regular npm audit
+- Continuous Snyk scanning
+- Dependabot alerts
+- License verification
+- Keep dependencies updated
+- Version controlled lock files
 
 ## Required Practices
 - Input validation
 - Output encoding
 - Authentication checks
 - Authorization controls
-- CSRF protection
 - XSS prevention
+- Secure logging
+- Sanitized error handling
 
 ## Security Reviews
 - Security-focused code reviews
-- Regular security assessments
-- Penetration testing
+- Periodic penetration testing
+- Static analysis (SAST)
+- Dynamic analysis (DAST)
+- Incident documentation
+- Response plan
 
-## Scanning
-- Static code analysis
-- Dynamic security testing
-- Dependency scanning 
+## Best Practices
+- Principle of least privilege
+- Defense in depth
+- Fail securely
+- Don't trust client data
+- Validate in multiple layers
+- Keep secure logs
+
+@middleware.ts
+@lib/auth/**/*
+@app/api/**/*
+@.env.example
+@package.json 
