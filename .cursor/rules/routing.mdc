@@ -1,0 +1,31 @@
+---
+description: Routing patterns and directory structure for the project
+globs: ["app/**/*", "pages/**/*", "middleware.ts"]
+---
+
+# Routing Guide
+
+## Directory Structure
+- app/
+  - (auth)/ - Authenticated routes group
+  - (public)/ - Public routes group
+  - api/ - API routes
+- components/
+  - ui/ - Base components
+  - features/ - Feature-specific components
+- lib/ - Utilities and configurations
+
+## Conventions
+- Use layout.tsx for shared layouts
+- Implement loading.tsx for Suspense
+- Define error.tsx for error handling
+- Keep page.tsx as single page file
+
+## Middleware
+- Authentication
+- Redirects
+- Security headers
+- Rate limiting
+
+@app/**/*
+@middleware.ts 
