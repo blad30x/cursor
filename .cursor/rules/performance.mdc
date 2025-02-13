@@ -1,0 +1,27 @@
+---
+description: Optimization and performance guide
+globs: ["app/**/*", "components/**/*", "next.config.js"]
+---
+
+# Performance Guide
+
+## Optimizations
+- Images with next/image
+- Fonts with next/font
+- Scripts with next/script
+- Dynamic imports
+
+## Build
+- Bundle analysis
+- Tree shaking
+- Code splitting
+- Minification
+
+## Metrics
+- Core Web Vitals
+- Time to First Byte
+- First Contentful Paint
+- Time to Interactive
+
+@next.config.js
+@app/layout.tsx 
