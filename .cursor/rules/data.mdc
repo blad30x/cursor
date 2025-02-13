@@ -1,0 +1,27 @@
+---
+description: Data fetching and manipulation patterns
+globs: ["app/**/page.tsx", "lib/**/*.ts", "app/api/**/*.ts"]
+---
+
+# Data Fetching Guide
+
+## Server Components
+- Direct server fetching
+- Cache and revalidation
+- Parallel data fetching
+- Streaming with Suspense
+
+## API Routes
+- Edge Runtime handlers
+- Zod validation
+- Rate limiting
+- Standardized error handling
+
+## Cache
+- Use React Cache
+- Implement ISR when possible
+- Strategic revalidate definition
+- Manage cache tags
+
+@app/api/**/*
+@lib/fetch/**/* 
