@@ -1,0 +1,26 @@
+---
+description: React component patterns and best practices
+globs: ["components/**/*.tsx", "app/**/*.tsx"]
+---
+
+# Components Guide
+
+## Structure
+- Server Components by default
+- 'use client' only when needed
+- TypeScript typed props
+- Lazy loading for heavy components
+
+## Patterns
+- Composition over inheritance
+- Custom hooks in /hooks
+- Context API for global state
+- Strategic memoization
+
+## Performance
+- Avoid prop drilling
+- Strategic use of React.memo
+- Implement Suspense boundaries
+- Optimize re-renders
+
+@components/**/* 
