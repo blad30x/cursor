@@ -1,0 +1,54 @@
+---
+description: Style guide and design system for projects
+globs: ["app/**/*.tsx", "components/**/*.tsx", "styles/**/*.css", "styles/**/*.scss", "tailwind.config.ts"]
+---
+
+# Style Guide
+
+## Main Colors
+- Night Black: #0A0A0A
+- Blood Red: #8B0000
+- Vampiric Silver: #C0C0C0
+- UV Blue: #1E90FF
+- Ancient Gold: #DAA520
+
+## Typography
+- Main Font: 'Blade Runner Movie Font', sans-serif
+- Secondary Font: 'Gothic', sans-serif
+- Headings: 'Vampire Wars', display
+
+## Components
+
+### Buttons
+- Primary style: Blood Red with metallic border
+- Hover: UV glow pulse effect
+- Disabled: Reduced opacity with gray effect
+
+### Cards
+- Background: Night Black gradient
+- Border: Vampiric Silver with metallic effect
+- Hover: Soft red glow
+
+### Modals
+- Overlay: Black with 85% opacity
+- Border: Metallic effect with Vampiric Silver
+- Animation: Fade in with mist effect
+
+## Animations
+- Transitions: 300ms ease-in-out
+- Hover effects: 200ms
+- Page transitions: Fade with blood drip effect
+
+## Layouts
+- Dark mode by default
+- Fluid elements
+- 12-column grid system
+- Base spacing: 8px
+
+## Media
+- Images with grain effect
+- Videos with dark overlay
+- Monochromatic style icons
+
+@tailwind.config.ts
+@styles/globals.css 
